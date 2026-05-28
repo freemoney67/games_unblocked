@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnblockGames - Play Anywhere</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: #222;
+            padding: 2rem;
+            border-bottom: 1px solid #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: #999;
+            letter-spacing: 1px;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Section title */
+        .section-title {
+            font-size: 1.8rem;
+            margin: 2.5rem 0 2rem 0;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Game grid */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .game-card {
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .game-card:hover {
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            border-color: #444;
+        }
+
+        .game-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .game-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .game-desc {
+            font-size: 0.95rem;
+            color: #999;
+            line-height: 1.5;
+        }
+
+        /* Info section */
+        .info-section {
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-section h3 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .info-section p {
+            line-height: 1.8;
+            color: #bbb;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .info-section p strong {
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #333;
+            margin-top: 3rem;
+            background: #222;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .games-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UnblockGames</h1>
+        <p class="tagline">Play anywhere, anytime, no restrictions</p>
+    </header>
+
+    <div class="container">
+        <section class="info-section">
+            <h3>Welcome to UnblockGames</h3>
+            <p>
+                A collection of browser-based games you can play anywhere. No downloads required, no restrictions. 
+                Just straightforward gaming fun in your browser. Browse our selection of games and start playing.
+            </p>
+        </section>
+
+        <h2 class="section-title">Featured Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-icon">🎯</div>
+                <div class="game-title">Flappy Bird Clone</div>
+                <div class="game-desc">Classic tap-to-fly action. How far can you go?</div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🧩</div>
+                <div class="game-title">Tetris</div>
+                <div class="game-desc">The legendary puzzle game. Stack, clear, repeat.</div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🐍</div>
+                <div class="game-title">Snake</div>
+                <div class="game-desc">Grow your snake and avoid hitting yourself.</div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🚀</div>
+                <div class="game-title">Space Invaders</div>
+                <div class="game-desc">Defend Earth from the cosmic invasion.</div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🃏</div>
+                <div class="game-title">Memory Match</div>
+                <div class="game-desc">Flip cards and test your memory skills.</div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">⚔️</div>
+                <div class="game-title">Battle Arena</div>
+                <div class="game-desc">PvP combat action. Defeat your enemies.</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Why Choose UnblockGames?</h2>
+        <div class="info-section">
+            <p><strong>No Restrictions</strong> - Play any game, anytime, anywhere</p>
+            <p><strong>Fast Loading</strong> - Games load instantly in your browser</p>
+            <p><strong>Regular Updates</strong> - New games added regularly</p>
+            <p><strong>No Downloads</strong> - Browser-based and completely free</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UnblockGames. All rights reserved.</p>
+    </footer>
+</body>
+</html>
